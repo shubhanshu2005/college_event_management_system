@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F8F6"/>
+      <stop offset="100%" stop-color="#EBE7DE"/>
+    </linearGradient>
+
+    <!-- Lattice Pattern -->
+    <pattern id="jaipurJali" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M14 0 L28 14 L14 28 L0 14 Z" fill="none" stroke="#DFD9CD" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="5" fill="none" stroke="#D5CEBF" stroke-width="1"/>
+      <circle cx="14" cy="14" r="2" fill="#E8E2D5"/>
+    </pattern>
+
+    <!-- Leather Chair Gradient -->
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D1C15"/>
+      <stop offset="30%" stop-color="#4E3328"/>
+      <stop offset="70%" stop-color="#5A3B2F"/>
+      <stop offset="100%" stop-color="#2B1A13"/>
+    </linearGradient>
+
+    <!-- Checked Tweed Suit Pattern -->
+    <pattern id="checkedSuit" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#758296"/>
+      <line x1="0" y1="0" x2="12" y2="0" stroke="#5C687B" stroke-width="1.2"/>
+      <line x1="0" y1="6" x2="12" y2="6" stroke="#8A97AC" stroke-width="0.8"/>
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#5C687B" stroke-width="1.2"/>
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#8A97AC" stroke-width="0.8"/>
+    </pattern>
+
+    <!-- Suit Lapel Gradient -->
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#677387"/>
+      <stop offset="100%" stop-color="#4E5868"/>
+    </linearGradient>
+
+    <!-- Skin Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D0B4"/>
+      <stop offset="50%" stop-color="#E5BE9E"/>
+      <stop offset="100%" stop-color="#D6A785"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B2423"/>
+      <stop offset="100%" stop-color="#141111"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background Wallpaper -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+  <rect width="400" height="340" fill="url(#jaipurJali)" opacity="0.85"/>
+
+  <!-- 2. High-Back Brown Leather Executive Chair -->
+  <g>
+    <!-- Chair back shape -->
+    <path d="M 85,110 C 85,75 120,65 200,65 C 280,65 315,75 315,110 L 325,410 C 325,430 305,440 280,440 L 120,440 C 95,440 75,430 75,410 Z" fill="url(#chairGrad)" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.25))"/>
+    
+    <!-- White tufting / contrast stitching along borders -->
+    <path d="M 98,115 C 98,85 125,78 200,78 C 275,78 302,85 302,115 L 312,410" fill="none" stroke="#E2DCD5" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.6"/>
+    <path d="M 88,115 L 98,410" fill="none" stroke="#E2DCD5" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.6"/>
+    
+    <!-- Horizontal tufting lines -->
+    <line x1="95" y1="165" x2="305" y2="165" stroke="#251610" stroke-width="3"/>
+    <line x1="95" y1="166" x2="305" y2="166" stroke="#9A7B6D" stroke-width="1" opacity="0.5"/>
+    <line x1="90" y1="230" x2="310" y2="230" stroke="#251610" stroke-width="3"/>
+    <line x1="90" y1="231" x2="310" y2="231" stroke="#9A7B6D" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- 3. Torso & Checked Grey Blazer Suit -->
+  <g>
+    <!-- Suit Body -->
+    <path d="M 50,500 L 95,280 C 105,255 130,240 160,235 L 200,290 L 240,235 C 270,240 295,255 305,280 L 350,500 Z" fill="url(#checkedSuit)"/>
+    
+    <!-- Blazer Left Shoulder & Arm -->
+    <path d="M 50,500 L 95,280 C 100,265 115,250 140,240 L 175,370 L 130,500 Z" fill="url(#checkedSuit)"/>
+    <!-- Blazer Right Shoulder & Arm -->
+    <path d="M 350,500 L 305,280 C 300,265 285,250 260,240 L 225,370 L 270,500 Z" fill="url(#checkedSuit)"/>
+
+    <!-- Dark Charcoal V-Neck Sweater Vest -->
+    <path d="M 160,280 L 200,345 L 240,280 L 250,450 L 150,450 Z" fill="#2E333D"/>
+    <!-- Vest V-Neck Ribbing -->
+    <path d="M 160,280 L 200,345 L 240,280" fill="none" stroke="#22262E" stroke-width="4"/>
+    <!-- Vest Buttons -->
+    <circle cx="200" cy="370" r="3.5" fill="#181B20"/>
+    <circle cx="200" cy="400" r="3.5" fill="#181B20"/>
+    <circle cx="200" cy="430" r="3.5" fill="#181B20"/>
+
+    <!-- Crisp White Shirt Inside -->
+    <polygon points="168,230 200,315 232,230 216,210 184,210" fill="#FFFFFF"/>
+    <!-- Shirt Collar Flaps -->
+    <polygon points="168,225 198,270 190,225" fill="#F4F4F6" stroke="#D3D3D8" stroke-width="1"/>
+    <polygon points="232,225 202,270 210,225" fill="#F4F4F6" stroke="#D3D3D8" stroke-width="1"/>
+
+    <!-- Lapels of Checked Blazer -->
+    <polygon points="140,240 182,350 156,430 115,310" fill="url(#lapelGrad)" stroke="#4E5868" stroke-width="1"/>
+    <polygon points="260,240 218,350 244,430 285,310" fill="url(#lapelGrad)" stroke="#4E5868" stroke-width="1"/>
+
+    <!-- Lapel Mic on Left Collar -->
+    <rect x="250" y="300" width="5" height="10" rx="2" fill="#111827"/>
+    <line x1="252.5" y1="310" x2="252.5" y2="330" stroke="#374151" stroke-width="1"/>
+  </g>
+
+  <!-- 4. Neck & Face -->
+  <g>
+    <!-- Neck -->
+    <path d="M 178,205 L 178,245 C 178,255 190,262 200,262 C 210,262 222,255 222,245 L 222,205 Z" fill="url(#skinGrad)"/>
+    <!-- Neck Shadow -->
+    <path d="M 180,210 C 190,225 210,225 220,210 L 222,225 C 210,238 190,238 178,225 Z" fill="#C29472" opacity="0.6"/>
+
+    <!-- Head / Face Base Shape -->
+    <path d="M 148,150 C 148,110 165,95 200,95 C 235,95 252,110 252,150 C 252,185 240,218 200,222 C 160,218 148,185 148,150 Z" fill="url(#skinGrad)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+
+    <!-- Ears -->
+    <ellipse cx="146" cy="155" rx="6" ry="14" fill="#DCB08F"/>
+    <ellipse cx="146" cy="155" rx="3" ry="8" fill="#C59676"/>
+    <ellipse cx="254" cy="155" rx="6" ry="14" fill="#DCB08F"/>
+    <ellipse cx="254" cy="155" rx="3" ry="8" fill="#C59676"/>
+
+    <!-- Hair (Neat black, classic side-part styling as in photo) -->
+    <path d="M 148,140 C 145,115 158,88 190,82 C 220,77 250,86 254,115 C 256,132 254,146 251,148 C 248,135 245,110 225,102 C 205,96 175,102 165,116 C 158,126 154,142 148,140 Z" fill="url(#hairGrad)"/>
+    <path d="M 152,120 C 170,102 210,100 248,116" fill="none" stroke="#453B3A" stroke-width="2" opacity="0.6"/>
+
+    <!-- Eyebrows -->
+    <path d="M 166,136 Q 180,132 192,136" fill="none" stroke="#251E1E" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 208,136 Q 220,132 234,136" fill="none" stroke="#251E1E" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <g>
+      <!-- Left Eye -->
+      <ellipse cx="179" cy="146" rx="8.5" ry="5.5" fill="#FFFFFF"/>
+      <ellipse cx="179" cy="146" rx="4.2" ry="4.2" fill="#3D2B1F"/>
+      <circle cx="179" cy="146" r="2.2" fill="#111111"/>
+      <circle cx="180.5" cy="144.5" r="1" fill="#FFFFFF"/>
+
+      <!-- Right Eye -->
+      <ellipse cx="221" cy="146" rx="8.5" ry="5.5" fill="#FFFFFF"/>
+      <ellipse cx="221" cy="146" rx="4.2" ry="4.2" fill="#3D2B1F"/>
+      <circle cx="221" cy="146" r="2.2" fill="#111111"/>
+      <circle cx="222.5" cy="144.5" r="1" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Nose -->
+    <path d="M 198,138 L 197,168 Q 200,174 204,170 Q 207,168 202,168" fill="none" stroke="#C29472" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="193" cy="170" rx="3" ry="1.8" fill="#B58462"/>
+    <ellipse cx="207" cy="170" rx="3" ry="1.8" fill="#B58462"/>
+
+    <!-- Gentle Academic Smile / Mouth -->
+    <path d="M 186,188 Q 200,198 214,188" fill="none" stroke="#A8574B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 190,188 Q 200,192 210,188" fill="#FFFFFF" opacity="0.9"/>
+    <line x1="184" y1="187" x2="188" y2="189" stroke="#93453A" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="216" y1="187" x2="212" y2="189" stroke="#93453A" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Modern Rectangular Transparent / Wire Glasses (Exact from photo) -->
+    <g>
+      <!-- Left Rim -->
+      <rect x="166" y="138" width="28" height="18" rx="4" fill="rgba(255,255,255,0.2)" stroke="#5A667A" stroke-width="2.2"/>
+      <!-- Right Rim -->
+      <rect x="206" y="138" width="28" height="18" rx="4" fill="rgba(255,255,255,0.2)" stroke="#5A667A" stroke-width="2.2"/>
+      <!-- Bridge -->
+      <path d="M 194,144 Q 200,141 206,144" fill="none" stroke="#5A667A" stroke-width="2.5"/>
+      <!-- Temples / Arms -->
+      <line x1="166" y1="144" x2="148" y2="142" stroke="#5A667A" stroke-width="2.2"/>
+      <line x1="234" y1="144" x2="252" y2="142" stroke="#5A667A" stroke-width="2.2"/>
+      <!-- Lens Reflections -->
+      <line x1="172" y1="141" x2="184" y2="141" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8"/>
+      <line x1="212" y1="141" x2="224" y2="141" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- 5. Clasped Hands & Executive Glass Table (Exact Pose from Uploaded Image) -->
+  <g>
+    <!-- Reflective Glass Table Top -->
+    <rect x="0" y="445" width="400" height="55" fill="#E8EEF2" opacity="0.95"/>
+    <line x1="0" y1="445" x2="400" y2="445" stroke="#B0C4DE" stroke-width="3"/>
+    <line x1="0" y1="448" x2="400" y2="448" stroke="#FFFFFF" stroke-width="1.5"/>
+
+    <!-- Smartphone on glass desk -->
+    <rect x="165" y="456" width="70" height="34" rx="5" fill="#1F2937" stroke="#111827" stroke-width="1.5"/>
+    <rect x="168" y="459" width="64" height="28" rx="3" fill="#374151"/>
+    <line x1="175" y1="465" x2="225" y2="465" stroke="#60A5FA" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Left Wrist with Silver Metallic Watch (Left side in image perspective) -->
+    <g transform="translate(245, 410)">
+      <rect x="0" y="5" width="22" height="12" rx="2" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="1"/>
+      <rect x="4" y="2" width="14" height="18" rx="3" fill="#E5E7EB" stroke="#6B7280" stroke-width="1.2"/>
+      <circle cx="11" cy="11" r="5" fill="#FFFFFF" stroke="#374151" stroke-width="0.8"/>
+    </g>
+
+    <!-- Right Wrist with Sacred Red/Orange Kalava Thread -->
+    <g transform="translate(135, 412)">
+      <rect x="0" y="3" width="18" height="6" rx="2" fill="#EF4444"/>
+      <line x1="0" y1="6" x2="18" y2="6" stroke="#F59E0B" stroke-width="1.5"/>
+    </g>
+
+    <!-- Clasped Hands with Interlaced Fingers (Centered in front of chest) -->
+    <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.2))">
+      <!-- Base hand shape -->
+      <path d="M 160,420 C 160,390 190,380 200,380 C 210,380 240,390 240,420 C 240,445 220,455 200,455 C 180,455 160,445 160,420 Z" fill="#DCB08F"/>
+      
+      <!-- Interlaced Fingers Knuckles -->
+      <ellipse cx="185" cy="405" rx="6" ry="12" fill="#E5BE9E" stroke="#C59676" stroke-width="1"/>
+      <ellipse cx="195" cy="400" rx="6" ry="14" fill="#E5BE9E" stroke="#C59676" stroke-width="1"/>
+      <ellipse cx="205" cy="400" rx="6" ry="14" fill="#E5BE9E" stroke="#C59676" stroke-width="1"/>
+      <ellipse cx="215" cy="405" rx="6" ry="12" fill="#E5BE9E" stroke="#C59676" stroke-width="1"/>
+
+      <!-- Thumbs Resting Together -->
+      <path d="M 190,385 C 195,375 205,375 210,385" fill="none" stroke="#B88764" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

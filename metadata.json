@@ -1,0 +1,6 @@
+{
+  "name": "Arya College of Engineering (Main Campus, Jaipur) - Event Management System",
+  "description": "Official campus event discovery, QR pass check-in, volunteer coordination, and attendance certificate portal for Arya College of Engineering (Main Campus, Kukas, Jaipur - RTU Affiliated).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
