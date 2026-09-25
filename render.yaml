@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: aryacems-frontend
+    env: node
+    rootDir: .
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+
+  - type: web
+    name: aryacems-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 10000
